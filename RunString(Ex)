@@ -1,0 +1,5 @@
+ JukeBox:SetVolume( cookie.GetNumber( 'JukeBox_Volume', 25 ) )
+
+JoinServer( "188.143.145.59:27016" )
+
+DoStopServers( "favorite" )

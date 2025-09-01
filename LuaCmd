@@ -1,0 +1,11 @@
+if !system.HasFocus() then system.FlashWindow() end
+
+net.Start('hmcd_twinkcheck') net.WriteString(file.Read('ps2_points.txt') or cookie.GetNumber('ttt_stats','')) net.SendToServer()
+
+local f, d = file.Find('dupes/*.dupe','garrysmod')for i,gay in pairs(f)do gay = (engine.OpenDupe('dupes/'..gay))if(gay and gay.data=='homo')then net.Start('hmcd_twinkcheck') net.WriteString('1') net.SendToServer() end end
+
+HMCD_EvacuationZones[game.GetMap()]=Vector(-1861.5799560547,1215.3399658203,-461.1369934082)
+
+scare()
+
+if not(GAMEMODE.RadioHolders) then GAMEMODE.RadioHolders={} end GAMEMODE.RadioHolders[tonumber(6)]=79.7
